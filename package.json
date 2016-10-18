@@ -1,0 +1,39 @@
+{
+  "name": "sample-ts-project",
+  "version": "1.0.0",
+  "description": "sample-ts-project",
+  "license": "MIT",
+  "author": "Niolas",
+  "files": [
+    "lib"
+  ],
+  "main": "dist/node/index.js",
+  "browser": {
+    "dist/node/index.js": "dist/browser/index.js"
+  },
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "tslint --force --format verbose \"src/**/*.ts\"",
+    "prebuild": "npm run lint",
+    "build": "npm run build-node && npm run build-browser",
+    "build-node": "tsc",
+    "build-browser": "tsc --project tsconfig-browser.json",
+    "pretest": "npm run lint",
+    "test": "mocha --compilers ts:ts-node/register --recursive test/**/*.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "3.4.30",
+    "@types/mocha": "2.2.29",
+    "@types/node": "6.0.31",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.1",
+    "rimraf": "^2.5.4",
+    "ts-node": "^1.2.2",
+    "tslint": "3.15.1",
+    "typescript": "2.0.3"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
