@@ -12,6 +12,7 @@
     "build": "npm run build-node && npm run build-browser",
     "build-node": "tsc",
     "build-browser": "tsc --project tsconfig-browser.json",
+    "build-test": "tsc --project tsconfig-test.json",
     "start": "node ./dist/node/index",
     "lint": "tslint --config tslint.json --project tsconfig-test.json",
     "pretest": "npm run lint",

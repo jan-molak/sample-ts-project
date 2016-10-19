@@ -6,6 +6,9 @@
     <pass-parent-env>true</pass-parent-env>
     <envs>
       <env name="NODE_ENV" value="mocha" />
+      <env name="TS_NODE_CACHE" value="false" />
+      <env name="TS_NODE_PROJECT" value="./tsconfig-test.json" />
+      <env name="TS_NODE_CACHE_DIRECTORY" value="./.cache" />
     </envs>
     <ui>bdd</ui>
     <extra-mocha-options />
