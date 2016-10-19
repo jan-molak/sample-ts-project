@@ -1,0 +1,25 @@
+{
+    "include": [
+        "src/**/*",
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules/",
+        "dist/",
+        "test/"
+    ],
+    "extension": [
+        ".ts",
+        ".tsx"
+    ],
+    "require": [
+        "ts-node/register"
+    ],
+    "reporter": [
+        "lcov",
+        "text-summary",
+        "text-lcov"
+    ],
+    "sourceMap": true,
+    "instrument": true
+}

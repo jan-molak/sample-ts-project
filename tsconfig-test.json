@@ -1,20 +1,20 @@
 {
     "compilerOptions": {
         "declaration": true,
-        "module": "es6",
+        "module": "commonjs",
         "moduleResolution": "node",
         "noImplicitAny": true,
-        "outDir": "./dist/browser",
+        "outDir": "./dist/test",
         "preserveConstEnums": true,
         "removeComments": true,
         "sourceMap": true,
         "typeRoots" : ["./node_modules/@types"]
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "test/**/*"
     ],
     "exclude": [
-        "node_modules",
-        "test/**/*"
+        "node_modules"
     ]
 }

@@ -1,5 +1,8 @@
+.nyc_output/
 coverage/
-node_modules/
-*.log
 dist/
-.idea/
+node_modules/
+*.local.json
+*.local.js
+*.log
+*.orig

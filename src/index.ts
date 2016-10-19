@@ -1,3 +1,5 @@
-import { Greeter } from "./greeter";
-
-export { Greeter };
+export default class {
+    public greet(): String {
+        return "hello world";
+    }
+};
