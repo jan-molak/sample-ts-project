@@ -1,3 +1,5 @@
+import "mocha";
+
 import Greater from "../../src/index";
 import { assert, expect, should } from "chai";
 
