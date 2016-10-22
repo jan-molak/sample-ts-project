@@ -4,16 +4,11 @@
     <node-options />
     <working-directory>$PROJECT_DIR$</working-directory>
     <pass-parent-env>true</pass-parent-env>
-    <envs>
-      <env name="NODE_ENV" value="mocha" />
-      <env name="TS_NODE_CACHE" value="false" />
-      <env name="TS_NODE_PROJECT" value="./tsconfig-test.json" />
-      <env name="TS_NODE_CACHE_DIRECTORY" value="./.cache" />
-    </envs>
+    <envs />
     <ui>bdd</ui>
     <extra-mocha-options />
     <test-kind>DIRECTORY</test-kind>
-    <test-directory>$PROJECT_DIR$/test/unit</test-directory>
+    <test-directory>$PROJECT_DIR$/test</test-directory>
     <recursive>true</recursive>
     <method />
   </configuration>

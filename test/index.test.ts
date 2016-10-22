@@ -1,9 +1,11 @@
-import Greater from "../../src/index";
+import "mocha";
+
+import Greater from "../src/index";
 import { assert, expect, should } from "chai";
 
 should();
 
-describe("an integration test", () => {
+describe("a unit test", () => {
     it("is self aware", () => {
         // Arrange
         const greater = new Greater();
