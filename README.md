@@ -1,8 +1,8 @@
 # Features #
 
-This project is a sample project configuration of an NPM package that compiles for NPM as well as webpack.
-
-This project is configured for WebStorm, it supports building, unit tests integration tests and code coverage.
+This project is a sample project configuration of an NPM package.
+This project is configured for WebStorm, it supports building and unit tests.
 
 # Problem #
-Debugging the unit tests in WebStorm does not work. It does not break at the breakpoints.
+Debugging the unit tests in WebStorm works on a Mac; but it does not 
+work on Windows. It does not break at the breakpoints.
